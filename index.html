@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Desenvolvimento Web</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1><i class="fas fa-code"></i> Rafael Campos</h1>
+            <p class="lead">Portfólio de Desenvolvimento Web - Semestre 2025</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2">HTML</span>
+                <span class="badge bg-light text-dark me-2">CSS</span>
+                <span class="badge bg-light text-dark me-2">PHP</span>
+                <span class="badge bg-light text-dark me-2">JavaScript</span>
+                <span class="badge bg-light text-dark me-2">Bootstrap</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="container">
+        <div class="stats-section">
+            <div class="row">
+                <div class="col-md-3 stat-item">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Projetos</div>
+                </div>
+                <div class="col-md-3 stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Tecnologias</div>
+                </div>
+                <div class="col-md-3 stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Horas de Código</div>
+                </div>
+                <div class="col-md-3 stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Dedicação</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container mb-5">
+        <h2 class="section-title"><i class="fas fa-folder-open"></i> Meus Projetos</h2>
+
+        <div class="row g-4 mt-3">
+            <!-- Projeto 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-img-top">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dj John Eventos</h5>
+                        <p class="card-text">Site para cadastramento de usuarios, equipamentos, gerador de emprestimos
+                            de equipamentos e etc.</p>
+                        <div class="mb-3">
+                            <span class="badge-custom">HTML</span>
+                            <span class="badge-custom">CSS</span>
+                        </div>
+                        <button class="btn btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Ver Detalhes <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-img-top">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Academia FIT CLASS</h5>
+                        <p class="card-text">Nossa academia oferece um espaço completo para treinos, com equipamentos
+                            modernos e ambiente motivador.</p>
+                        <div class="mb-3">
+                            <span class="badge-custom">HTML</span>
+                            <span class="badge-custom">CSS</span>
+                        </div>
+                        <button class="btn btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Ver Detalhes <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-img-top">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pizzaria</h5>
+                        <p class="card-text">Conheça nossa pizzaria</p>
+                        <div class="mb-3">
+                            <span class="badge-custom">HTML</span>
+                            <span class="badge-custom">CSS</span>
+                        </div>
+                        <button class="btn btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Ver Detalhes <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="container mb-5">
+        <div class="comments-section">
+            <h2 class="section-title"><i class="fas fa-comments"></i> Comentários</h2>
+
+            <!-- Form -->
+            <form id="commentForm" class="mb-5">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="commentName" class="form-label">Nome *</label>
+                        <input type="text" class="form-control" id="commentName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="commentEmail" class="form-label">E-mail *</label>
+                        <input type="email" class="form-control" id="commentEmail" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="commentText" class="form-label">Comentário *</label>
+                        <textarea class="form-control" id="commentText" rows="4" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Comentário
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Comments List -->
+            <h4 class="mb-4"><i class="fas fa-list"></i> Comentários Recentes</h4>
+            <div id="commentsList"></div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-user"></i> Dj John Eventos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold">Descrição:</h6>
+                    <p>Projeto desenvolvido para criar uma página de apresentação de uma empresa de eventos, com foco em
+                        cadastramento de dados de participantes e parceiros. Trabalhei conceitos de estrutura HTML,
+                        semântica e estilização básica para organizar e exibir informações de forma clara e funcional.
+                    </p>
+                    <h6 class="fw-bold mt-3">Tecnologias Utilizadas:</h6>
+                    <ul>
+                        <li>HTML5 - Estrutura e semântica</li>
+                        <li>CSS3 - Estilização básica</li>
+                        <li>PHP - Processamento e integração de dados</li>
+                        <li>JavaScript - Interatividade e dinamismo</li>
+                        <li>Tags: header, main, section, article, footer</li>
+                    </ul>
+                    <div class="alert alert-info mt-3">
+                        <i class="fas fa-info-circle"></i> <strong>Site:</strong> Entre em nosso site e conheça mais
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://djjohneventos.wuaze.com/?i=1#" target="_blank" class="btn btn-detalhes me-2">
+                        <i class="fas fa-external-link-alt"></i> Acessar Projeto
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-envelope"></i> Academia FIT CLASS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold">Descrição:</h6>
+                    <p>Nossa academia oferece um espaço completo para treinos, com equipamentos modernos e ambiente
+                        motivador. Aqui você encontra saúde, bem-estar e acompanhamento para alcançar seus objetivos.
+                    </p>
+                    <h6 class="fw-bold mt-3">Tecnologias Utilizadas:</h6>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS3</li>
+                        <li>Validação HTML</li>
+                    </ul>
+                    <div class="alert alert-info mt-3">
+                        <i class="fas fa-info-circle"></i> <strong>Academia:</strong> Academia - Site sobre funcionarios
+                        e funcionalidades da nossa Academia.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://rafael-senai.github.io/ATV2---Academia/" target="_blank"
+                        class="btn btn-detalhes me-2">
+                        <i class="fas fa-external-link-alt"></i> Acessar Projeto
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-images"></i> Pizzaria</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold">Descrição:</h6>
+                    <p>Nossa pizzaria é o lugar ideal para saborear pizzas feitas com ingredientes frescos e massa de
+                        qualidade. Oferecemos um cardápio variado, ambiente acolhedor e aquele sabor irresistível que
+                        conquista a todos.</p>
+                    <h6 class="fw-bold mt-3">Tecnologias Utilizadas:</h6>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                    </ul>
+                    <div class="alert alert-info mt-3">
+                        <i class="fas fa-info-circle"></i> <strong>Pizzaria:</strong> Pizzaria - conheça nos
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://rafael-senai.github.io/ATV-PIZZARIA/" target="_blank"
+                        class="btn btn-detalhes me-2">
+                        <i class="fas fa-external-link-alt"></i> Acessar Projeto
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h5>Conecte-se Comigo</h5>
+            <div class="social-links my-3">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2025 Rafael Desenvolvido com <i class="fas fa-heart text-danger"></i> durante o
+                curso.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Comments management
+        let comments = [];
+
+        // Load comments on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            loadComments();
+            displayComments();
+        });
+
+        // Handle form submission
+        document.getElementById('commentForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('commentName').value;
+            const email = document.getElementById('commentEmail').value;
+            const text = document.getElementById('commentText').value;
+
+            const comment = {
+                id: Date.now(),
+                name: name,
+                email: email,
+                text: text,
+                date: new Date().toLocaleString('pt-BR')
+            };
+
+            comments.push(comment);
+            saveComments();
+            displayComments();
+
+            // Reset form
+            this.reset();
+
+            // Show success message
+            alert('Comentário enviado com sucesso!');
+        });
+
+        function saveComments() {
+            const json = JSON.stringify(comments, null, 2);
+            console.log('Comentários salvos em JSON:', json);
+        }
+
+        function loadComments() {
+            comments = [];
+        }
+
+        function displayComments() {
+            const commentsList = document.getElementById('commentsList');
+
+            if (comments.length === 0) {
+                commentsList.innerHTML = `
+                    <div class="empty-comments">
+                        <i class="fas fa-comment-slash"></i>
+                        <p>Nenhum comentário ainda. Seja o primeiro a comentar!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            commentsList.innerHTML = comments.map(comment => `
+                <div class="comment-item">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <div class="comment-author">
+                                <i class="fas fa-user-circle"></i> ${comment.name}
+                            </div>
+                            <div class="comment-date">
+                                <i class="fas fa-clock"></i> ${comment.date}
+                            </div>
+                            <div class="comment-text">${comment.text}</div>
+                        </div>
+                        <button class="btn btn-delete" onclick="deleteComment(${comment.id})">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function deleteComment(id) {
+            if (confirm('Deseja realmente excluir este comentário?')) {
+                comments = comments.filter(comment => comment.id !== id);
+                saveComments();
+                displayComments();
+            }
+        }
+
+        function exportCommentsJSON() {
+            const json = JSON.stringify(comments, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'comentarios.json';
+            a.click();
+        }
+    </script>
+</body>
+
+</html>
